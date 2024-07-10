@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Hello World",
+  "name": "Cloud debugger",
   "version": "1.0",
-  "description": "Adds hello world paragraph to all webpages",
+  "description": "replace content of login pages to ease debugging of the frontend locally",
   "content_scripts": [
 	{
-  	"matches": ["*://*/*"],
+  	"matches": ["*://localhost/authn/*"],
   	"js": ["helloworld.js"]
 	}
   ]
