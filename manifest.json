@@ -5,7 +5,7 @@
   "description": "replace content of login pages to ease debugging of the frontend locally",
   "content_scripts": [
 	{
-  	"matches": ["*://localhost/authn/*"],
+  	"matches": ["*://localhost/authn/realms/phoenix-realm/*"],
   	"js": ["helloworld.js"]
 	}
   ]

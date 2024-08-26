@@ -1,9 +1,9 @@
 
 
-// Select the form with the ID 'kc-form-login'
-var form = document.getElementById('kc-form-login');
+// Select all forms on the page
+var forms = document.querySelectorAll('form');
 
-if (form) {
+forms.forEach(function(form) {
 
     // add style to body
     document.body.style.border = "5px solid red";
@@ -24,4 +24,4 @@ if (form) {
 
     // Set the form's action attribute to the new relative path
     form.setAttribute('action', relativePath);
-}
+});
